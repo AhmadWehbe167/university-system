@@ -42,7 +42,11 @@
                 <td class='employee-container__td'>".$row['term']."</td>
                 <td class='employee-container__td'>".$row['prerequisite']."</td>
                 <td class='employee-container__td employee-container__table-edit'><a href='../pages/editCourse.php?course_code=".$row["course_code"]."'>Edit</a></td>
-                <td class='employee-container__td employee-container__table-delete'>Delete</td>
+                <td>
+                <form action='../includes/deleteCourse.inc.php?course_code=".$row['course_code']."' method='POST'>
+                  <input class='employee-container__td employee-container__table-delete' type='submit' value='Delete'>
+                </form>
+                </td>
               </tr>";
       }
     ?>

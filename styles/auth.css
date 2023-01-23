@@ -144,6 +144,9 @@ main {
 .employee-container__table-delete {
   color: red;
   font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .employee-container__row {
