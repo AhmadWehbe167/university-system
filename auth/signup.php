@@ -9,9 +9,6 @@
         if($_GET["error"] == "emptyfields"){
             echo "<p class='error-field'>All fields are required!</p>";
         }
-        elseif($_GET["error"] == "invalidnameandpassword"){
-            echo "<p class='error-field'>Invalid email or password!</p>";
-        }
         elseif($_GET["error"] == "invalidemail"){
             echo "<p class='error-field'>Invalid email!</p>";
         }

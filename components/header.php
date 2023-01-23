@@ -13,7 +13,9 @@
 <body>
 <header>
     <form class='logout-form' action='../includes/logout.inc.php' method='post'>
-        <span>University</span>
+        <a class="title-link" href="../index.php">
+            University
+        </a>
         <?php
         if(isset($_SESSION["email"])){
             echo "<button class='logout-btn' type='submit' name='logout-submit'> Logout </button>";

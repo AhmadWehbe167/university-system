@@ -12,17 +12,12 @@ if (isset($_POST['signup-submit'])){
         exit();
     }
 
-    elseif(!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $name)){
-        header("Location: ../auth/signup.php?error=invalidnameandpassword&userType=".$userType);
-        exit();
-    }
-
     elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location: ../auth/signup.php?error=invalidemail&name=".$name."&userType=".$userType);
         exit();
     }
 
-    elseif(!preg_match("/^[a-zA-Z0-9]*$/", $name)){
+    elseif(!preg_match("/^[a-zA-Z0-9 ]*$/", $name)){
         header("Location: ../auth/signup.php?error=invalidname&email=".$email."&userType=".$userType);
         exit();
 }
