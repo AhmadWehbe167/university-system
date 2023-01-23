@@ -51,14 +51,15 @@ if (isset($_POST['course-submit'])){
         exit();
     }
     else {
-        $sql = "INSERT INTO courses (course_code, course_name, course_description, credit_hours, instructor_email, meeting_times, department, level, term, prerequisite) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO courses (course_code, course_name, course_description, credit_hours, instructor_email, meeting_times, department, level, term, prerequisite, enrolled) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
             header("Location: ../pages/addCourse.php?error=sqlError");
             exit();
         }
         else{
-            mysqli_stmt_bind_param($stmt, "sssissssss",$course_code, $course_name, $course_description, $credit_hours, $instructor_email, $meeting_times, $department, $level, $term, $prerequisite);
+            $enrolled = "";
+            mysqli_stmt_bind_param($stmt, "sssisssssss",$course_code, $course_name, $course_description, $credit_hours, $instructor_email, $meeting_times, $department, $level, $term, $prerequisite, $enrolled);
             mysqli_stmt_execute($stmt);
             header("Location: ../pages/main.php");
             exit();
