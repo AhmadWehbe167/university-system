@@ -27,7 +27,7 @@ if (isset($_POST['signup-submit'])){
         if(!mysqli_stmt_prepare($stmt, $sql)){
             header("Location: ../auth/signup.php?error=sqlError");
             exit();
-        } 
+        }
         else {
             mysqli_stmt_bind_param($stmt, "s", $email); // "s" we are passing a string
             mysqli_stmt_execute($stmt);

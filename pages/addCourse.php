@@ -48,7 +48,7 @@
 
   <label class="addCourse-form__label" for="meeting-times">Meeting times:</label>
   <select class="addCourse-form__input" id="meeting-times" name="meeting-times">
-    <option value="MWF 09:00 AM - 10:00 AM" >MWF 09:00 AM - 10:00 AM</option>
+    <option value="MWF 09:00 AM - 10:00 AM" selected>MWF 09:00 AM - 10:00 AM</option>
     <option value="MWF 10:00 AM - 11:00 AM" >MWF 10:00 AM - 11:00 AM</option>
     <option value="MWF 11:00 AM - 12:00 PM" >MWF 11:00 AM - 12:00 PM</option>
     <option value="MWF 12:00 PM - 01:00 PM" >MWF 12:00 PM - 01:00 PM</option>

@@ -2,8 +2,6 @@
 if (isset($_POST['course-submit'])){
     require 'dbh.inc.php';
     
-    $limit = 30;
-
     $course_code = $_POST['course-code'];
     $course_name = $_POST['course-name'];
     $course_description = $_POST['course-description'];

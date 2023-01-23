@@ -41,7 +41,7 @@
                 <td class='employee-container__td'>".$row['level']."</td>
                 <td class='employee-container__td'>".$row['term']."</td>
                 <td class='employee-container__td'>".$row['prerequisite']."</td>
-                <td class='employee-container__td employee-container__table-edit'>Edit</td>
+                <td class='employee-container__td employee-container__table-edit'><a href='../pages/editCourse.php?course_code=".$row["course_code"]."'>Edit</a></td>
                 <td class='employee-container__td employee-container__table-delete'>Delete</td>
               </tr>";
       }
