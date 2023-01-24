@@ -1,0 +1,53 @@
+Date : 2023-01-24 18:05:35
+Directory : c:\xampp\htdocs\tutorial-Uni
+Total : 22 files,  1108 codes, 4 comments, 127 blanks, all 1239 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| PHP      |         21 |        915 |          0 |         92 |      1,007 |
+| CSS      |          1 |        193 |          4 |         35 |        232 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                         | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                            |         22 |      1,108 |          4 |        127 |      1,239 |
+| . (Files)                                                    |          1 |         16 |          0 |          2 |         18 |
+| auth                                                         |          2 |         76 |          0 |          4 |         80 |
+| components                                                   |          2 |         29 |          0 |          1 |         30 |
+| includes                                                     |         10 |        368 |          0 |         50 |        418 |
+| pages                                                        |          6 |        426 |          0 |         35 |        461 |
+| styles                                                       |          1 |        193 |          4 |         35 |        232 |
++--------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                     | language | code       | comment    | blank      | total      |
++--------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\xampp\htdocs\tutorial-Uni\auth\login.php                  | PHP      |         30 |          0 |          2 |         32 |
+| c:\xampp\htdocs\tutorial-Uni\auth\signup.php                 | PHP      |         46 |          0 |          2 |         48 |
+| c:\xampp\htdocs\tutorial-Uni\components\footer.php           | PHP      |          4 |          0 |          1 |          5 |
+| c:\xampp\htdocs\tutorial-Uni\components\header.php           | PHP      |         25 |          0 |          0 |         25 |
+| c:\xampp\htdocs\tutorial-Uni\includes\addCourse.inc.php      | PHP      |         66 |          0 |          7 |         73 |
+| c:\xampp\htdocs\tutorial-Uni\includes\dbh.inc.php            | PHP      |          9 |          0 |          3 |         12 |
+| c:\xampp\htdocs\tutorial-Uni\includes\deleteCourse.inc.php   | PHP      |         20 |          0 |          3 |         23 |
+| c:\xampp\htdocs\tutorial-Uni\includes\dropCourse.inc.php     | PHP      |         35 |          0 |          8 |         43 |
+| c:\xampp\htdocs\tutorial-Uni\includes\editCourse.inc.php     | PHP      |         40 |          0 |          4 |         44 |
+| c:\xampp\htdocs\tutorial-Uni\includes\fetchCourses.inc.php   | PHP      |         48 |          0 |          7 |         55 |
+| c:\xampp\htdocs\tutorial-Uni\includes\login.inc.php          | PHP      |         45 |          0 |          5 |         50 |
+| c:\xampp\htdocs\tutorial-Uni\includes\logout.inc.php         | PHP      |          5 |          0 |          0 |          5 |
+| c:\xampp\htdocs\tutorial-Uni\includes\registerCourse.inc.php | PHP      |         39 |          0 |          8 |         47 |
+| c:\xampp\htdocs\tutorial-Uni\includes\signup.inc.php         | PHP      |         61 |          0 |          5 |         66 |
+| c:\xampp\htdocs\tutorial-Uni\index.php                       | PHP      |         16 |          0 |          2 |         18 |
+| c:\xampp\htdocs\tutorial-Uni\pages\addCourse.php             | PHP      |        112 |          0 |         13 |        125 |
+| c:\xampp\htdocs\tutorial-Uni\pages\editCourse.php            | PHP      |        135 |          0 |         13 |        148 |
+| c:\xampp\htdocs\tutorial-Uni\pages\employee.php              | PHP      |         52 |          0 |          2 |         54 |
+| c:\xampp\htdocs\tutorial-Uni\pages\instructor.php            | PHP      |         52 |          0 |          2 |         54 |
+| c:\xampp\htdocs\tutorial-Uni\pages\main.php                  | PHP      |         16 |          0 |          1 |         17 |
+| c:\xampp\htdocs\tutorial-Uni\pages\student.php               | PHP      |         59 |          0 |          4 |         63 |
+| c:\xampp\htdocs\tutorial-Uni\styles\auth.css                 | CSS      |        193 |          4 |         35 |        232 |
+| Total                                                        |          |      1,108 |          4 |        127 |      1,239 |
++--------------------------------------------------------------+----------+------------+------------+------------+------------+
