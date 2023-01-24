@@ -1,4 +1,5 @@
 <?php
+
 function getCourses($conn){
     $sql = "SELECT * FROM courses";
     $stmt = mysqli_stmt_init($conn);
@@ -15,9 +16,8 @@ function getCourses($conn){
 }
 
 function numberOfEnrolledStudents($students) {
-    if($students == "") return 0;
     $student_list = explode(",", $students);
-    return count($student_list);
+    return count($student_list) - 1;
 }
 
 function getCourseByCode($course_code, $conn){
@@ -38,4 +38,18 @@ function getCourseByCode($course_code, $conn){
         }
     }
 }
+
+function userIsEnrolled($user, $enrolled){
+    return strpos($enrolled, $user) !== false;
+}
+
+function disabled($registered, $course_full){
+    if($registered || $course_full) return "disabled";
+}
+
+function removeUser($user, $enrolled_users){
+    $updated_enrolled_users = str_replace($user, "", $enrolled_users);
+    return $updated_enrolled_users;
+}
+
 ?>
