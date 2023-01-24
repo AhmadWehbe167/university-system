@@ -15,6 +15,7 @@ function getCourses($conn){
 }
 
 function numberOfEnrolledStudents($students) {
+    if($students == "") return 0;
     $student_list = explode(",", $students);
     return count($student_list);
 }

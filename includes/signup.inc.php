@@ -49,6 +49,7 @@ if (isset($_POST['signup-submit'])){
                     mysqli_stmt_execute($stmt);
                     session_start();
                     $_SESSION['email'] = $email;
+                    $_SESSION['userType'] = $userType;
                     header("Location: ../auth/signup.php?signup=success");
                     exit();
                 }
