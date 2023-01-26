@@ -1,0 +1,255 @@
+:root {
+  --color-primary: #2c3e50;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 300px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.form__select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 300px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.form__btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+}
+
+.main_p {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  margin-left: 10px;
+  width: 300px;
+}
+.form__a {
+  width: 300px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.form__p {
+  width: 300px;
+  text-align: center;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: var(--color-primary);
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.logout-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-field {
+  text-align: center;
+  color: red;
+}
+
+/* Employee styles */
+.course-cont__table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.course-cont__td,
+.course-cont__th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.course-cont__th:nth-child(1) {
+  width: 55px;
+}
+
+.course-cont__th:nth-child(4) {
+  width: 45px;
+}
+
+.course-cont__th:nth-child(6) {
+  width: 60px;
+}
+
+.course-cont__th:nth-child(11) {
+  width: 200px;
+}
+
+.course-cont__td:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.course-cont__th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.course-cont__table-edit {
+  color: green;
+  font-weight: bold;
+}
+
+.course-cont__table-delete {
+  color: red;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.course-cont__table-register {
+  background: none;
+  border: none;
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.course-cont__table-drop {
+  background: none;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.course-cont__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-cont__btn {
+  background-color: var(--color-primary);
+  color: white;
+  height: 3rem;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Header */
+.title-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Add Course */
+
+.addCourse-form {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #f6f8fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+.addCourse-form__label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.addCourse-form__input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.addCourse-form__input[type="submit"] {
+  background-color: #0366d6;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Register Course */
+
+.course-cont__td.disabled {
+  color: grey;
+  cursor: auto;
+}
+
+.course-container {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-wrap: anywhere;
+  height: 200px;
+}
