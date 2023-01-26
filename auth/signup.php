@@ -26,11 +26,14 @@
     if(isset($_SESSION['email'])){
         header("Location: ../pages/main.php");
     } else {
+        $name = isset($_GET["name"]) ? $_GET["name"] : "";
+        $email = isset($_GET["email"]) ? $_GET["email"] : "";
+
         echo "<form class='form' action='../includes/signup.inc.php' method='post'>
                 <label class='form__label'>Name</label>
-                <input class='form__input' type='text' name='name' value='' placeholder='name'>
+                <input class='form__input' type='text' name='name' placeholder='name' value='".$name."'>
                 <label class='form__label'>Email</label>
-                <input class='form__input' type='email' name='email' value='' placeholder='email'>
+                <input class='form__input' type='email' name='email' placeholder='email' value='".$email."'>
                 <label class='form__label'>Password</label>
                 <input class='form__input' type='password' name='password' value='' placeholder='password'>
                 <label class='form__label'>User Type</label>
